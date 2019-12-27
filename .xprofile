@@ -1,0 +1,10 @@
+#!/bin/bash
+
+logger "Loading $0"
+
+function runXmodmapConfig() {
+	logger "${FUNCNAME[0]}: Loading Custom Xmodmap configuration" 
+	xmodmap ~/.Xmodmap
+}
+
+runXmodmapConfig
