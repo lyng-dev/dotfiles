@@ -11,6 +11,7 @@ export ZSH="/home/s/.oh-my-zsh"
 ZSH_THEME="bira"
 plugins=(
 	git
+	ssh-agent
 	autojump
 )
 
