@@ -7,4 +7,11 @@ function runXmodmapConfig() {
 	xmodmap ~/.Xmodmap
 }
 
+function installZshAutojump() {
+	if ! [ -x "$(command -v autojump)" ]; then
+		sudo apt install autojump
+	fi
+}
+
+installZshAutojump
 runXmodmapConfig
