@@ -1,8 +1,9 @@
 # i3 config file (v4)
 # vim: filetype=i3
+
+
 # Windows-key is modifier
 set $mod Mod4
-
 
 # i3status bar font, pango is the text formatter tool
 # https://pango.gnome.org/
@@ -162,6 +163,9 @@ exec_always --no-startup-id compton
 
 # auto float tor by default
 for_window [class="Tor Browser"] floating enable
+
+# Add volumeicon
+exec --no-startup-id volumeicon
 
 # start synergy
 exec --no-startup-id synergy
