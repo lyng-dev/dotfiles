@@ -1,0 +1,33 @@
+general {
+	colors=true
+	markup = "pango"
+}
+
+order += "load"
+order += "disk /"
+order += "tztime local_date"
+order += "tztime local"
+order += "tztime beijing"
+
+load {
+    format = "[ load: %1min, %5min, %15min ]"
+}
+
+disk "/" {
+    format = "%avail free"
+}
+
+tztime local_date {
+	format = "%Y-%m-%d"
+}
+
+tztime local {
+	format = "<span foreground='#fff' background='#f00'> Aarhus </span> %time"
+	format_time = "%H:%M:%S"
+}
+
+tztime beijing {
+        format = "<span foreground='gold' background='#f00'> Beijing </span> %time"
+	format_time = "%H:%M:%S"
+        timezone = "Asia/Shanghai"
+}
