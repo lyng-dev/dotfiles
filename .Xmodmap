@@ -1,4 +1,10 @@
-keycode 0x42 = Caps_Lock
-keycode 105 = Mode_switch Mode_switch Mode_switch 
-keycode  38 = a A aring Aring
+! example: command = C
+!1. Key
+!2. Shift+Key
+!3. Mode_switch+Key
+!4. Mode_switch+Shift+Key
 
+keycode  105 = Mode_switch Mode_switch Mode_switch 
+keycode   38 = a A aring Aring
+keycode  47 = semicolon colon ooblique Ooblique
+keycode  48 = apostrophe quotedbl ae AE
