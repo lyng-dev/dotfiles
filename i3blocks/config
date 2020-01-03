@@ -1,0 +1,30 @@
+[nordvpn]
+command=python3 ~/.scripts/nordvpn-status.py
+color=#ffffff
+interval=5
+markup=pango
+
+[weather_ca]
+command=curl https://wttr.in/Toronto?format=j1 | jq '.current_condition[].temp_C' | xargs -t -i echo "🇨🇦 {}°C"
+interval=3600
+color=#ffffff
+
+[weather_dk]
+command=curl https://wttr.in/Aarhus?format=j1 | jq '.current_condition[].temp_C' | xargs -t -i echo "🇩🇰 {}°C"
+interval=3600
+color=#ffffff
+
+[weather_cn]
+command=curl https://wttr.in/Beijing?format=j1 | jq '.current_condition[].temp_C' | xargs -t -i echo "🇨🇳 {}°C"
+interval=3600
+color=#ffffff
+
+[ip]
+command=hostname -i | awk '{ print "IP:" $1 }'
+interval=5
+color=#91E78B
+
+# Update time every 5 seconds
+[time]
+command=date '+%Y-%m-%d %H:%M'
+interval=10
