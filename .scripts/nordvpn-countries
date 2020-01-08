@@ -1,5 +1,14 @@
-#!/bin/
+#!/bin/bash
+option=$(echo -e "Quick\nSelect\nDisconnect\n" | dmenu -i -p "NORD VPN:")
 
-nordvpn countries | sed 's/[^0-9A-Za-z\t\n_]//g' | tr '\t' '\n' | grep . | sort > nordvpn-countries.dat
-
-cat -vE nordvpn-countries.dat | dmenu -i -l 20 -fn Monospace-16 | xargs -r nordvpn c
+case "$option" in
+    Quick)
+        nordvpn connect
+    ;;
+    Select)
+	nordvpn countries | sed 's/[^a-zA-Z0-9_\t]//g' | tr '\t' '\n' | grep . | sort | dmenu -i -l 20 -p "Country: " | xargs -r nordvpn connect
+    ;;
+    Disconnect)
+        nordvpn disconnect
+    ;;
+esac
