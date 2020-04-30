@@ -43,3 +43,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 zstyle :omz:plugins:ssh-agent identities github
+
+#custom commands
+mkcd() { mkdir -p "$1" && cd "$1"; } 
