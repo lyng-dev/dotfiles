@@ -1,10 +1,9 @@
-# dotfiles
+# lyng-dev dotfies
 
-# Initial dependencies
-`sudo apt update && sudo apt upgrade`
+## Initial dependencies
+1. Update apt packages, and upgrade all packages: `sudo apt update && sudo apt upgrade`
+2. Install git: `sudo apt install git`
 
-`sudo apt install git`
-
-# installing ZSH
+## installing ZSH
 https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH
 - You need to reboot after installation for 'chsh' to take effect
