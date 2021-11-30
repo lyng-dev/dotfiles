@@ -1,4 +1,4 @@
-# lyng-dev dotfies
+# lyng-dev dotfiles
 
 ## Initial dependencies
 1. Update apt packages, and upgrade all packages: `sudo apt update && sudo apt upgrade`
