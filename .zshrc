@@ -45,4 +45,5 @@ source $ZSH/oh-my-zsh.sh
 zstyle :omz:plugins:ssh-agent identities github
 
 #custom commands
-mkcd() { mkdir -p "$1" && cd "$1"; } 
+mkcd() { mkdir -p "$1" && cd "$1"; }
+alias myip="curl -qs https://ifconfig.co/json | jq -r '.ip,.city,.country,.hostname,.asn_org'"
